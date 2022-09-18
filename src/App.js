@@ -1,14 +1,7 @@
 import {useEffect, useState} from "react";
 import Header from './components/Header';
-import axios from 'axios';
 import ItemsList from './components/ItemsList'
-
-const getItemsList = async (page, limit = 4) => {
-    const response = await axios.get(
-        `https://api.punkapi.com/v2/beers?page=${page}&per_page=${limit}`
-    );
-    return response && response.data || [];
-}
+import getItemsList from "./api/listApi";
 
 const App = () => {
     const [items, setItems] = useState([]);

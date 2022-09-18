@@ -1,8 +1,8 @@
 import React from "react";
 
-const Item = (props) => {
-    const item = props.value;
-    const ingredients = Object.keys(item.ingredients).join(',')
+const Item = ({item}) => {
+
+    const ingredients = item ? Object.keys(item.ingredients).join(','): ''
     return (
         <div className="custom-card one">
             <div className="img-holder">
