@@ -61,13 +61,12 @@
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
   position: absolute;
   z-index: 1;
   /*top: -39px;*/
   bottom: 170px;
 
-  left: 50%;
+  left: 72%;
   margin-left: -60px;
   font-size:10px;
   line-height:12px;
